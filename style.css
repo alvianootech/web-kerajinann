@@ -35,8 +35,8 @@ header {
 }
 
 .logo img {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -44,7 +44,7 @@ header {
 .logo h2 {
     font-size: 1.2rem;
     color: #ae8069;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 nav ul {
@@ -60,12 +60,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #902c2c;
+    color: maroon;
 }
 
 .hero {
     position: relative;
-    height: 70vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -73,13 +73,16 @@ nav ul li a:hover {
     color: white;
 }
 
-.hero-text {
+.hero-text{
     position: relative;
     z-index: 2;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-text h1 {
@@ -121,7 +124,7 @@ main {
 
 .judul-halaman {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .judul-halaman h1 {
@@ -132,8 +135,8 @@ main {
 .deskripsi {
     padding: 40px 5%;
     text-align: center;
-    background: white;
-    margin: 20px 0;
+    background-color:bisque;
+    
 }
 
 .produk {
@@ -149,10 +152,10 @@ main {
 }
 
 .kartu {
-    background: white;
+    background-color: bisque;
     border-radius: 8px;
     padding: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 15px 10px rgba(0,0,0,0.05);
     text-align: center;
     transition: transform 0.2s;
 }
@@ -196,17 +199,28 @@ button:hover {
 
 .profil-toko {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     background: white;
-    padding: 25px;
+    padding: 15px;
     border-radius: 8px;
+}
+
+.isi-profil h2 {
+    text-align:center;
+    margin-bottom: 10px;
 }
 
 .gambar-toko img {
     width: 300px;
     border-radius: 8px;
+}
+
+.keunggulan h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .keunggulan-container {
@@ -220,7 +234,7 @@ button:hover {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #8b5a2b;
+    border-left: 3px solid #8b5a2b;
 }
 
 .galeri-container {
@@ -245,7 +259,10 @@ button:hover {
 }
 
 .form-kontak, .info-kontak {
-    flex: 1;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
 
 .form-kontak form {
@@ -253,6 +270,7 @@ button:hover {
     flex-direction: column;
     gap: 10px;
     margin-top: 15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
 .form-kontak input, .form-kontak textarea {
@@ -260,6 +278,21 @@ button:hover {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.card-info{
+    background:white;
+    border-radius:8px;
+    padding:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card-info h2{
+    margin-bottom:15px;
+}
+
+.card-info p{
+    margin-bottom:5px;
 }
 
 footer {
